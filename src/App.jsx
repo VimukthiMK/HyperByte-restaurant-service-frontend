@@ -2,8 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import './App.css'
 
-import Layout from 'src/routes/Layout/Layout'
-import Restaurants from './routes/ResturantPage/ResturantPage'
+import Layout from 'src/routes/layout/Layout'
+import Restaurants from 'src/routes/resturantPage/ResturantPage'
 
 function App() {
   

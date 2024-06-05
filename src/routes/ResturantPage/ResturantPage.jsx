@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import axios from 'axios'
 import { Link } from 'react-router-dom'
+import ApiRequest from "src/lib/ApiReqest"
 
 const ResturantPage = () => {
   const [restaurants, setRestaurants] = useState([])
@@ -12,7 +12,8 @@ const ResturantPage = () => {
   }, [page])
 
   const loadRestaurants = async () => {
-    const res = await axios.get(`http://localhost:8000/api/restaurants?page=${page}&limit=8`)
+    const res = await ApiRequest.get(`/restaurants?page=${page}&limit=8`)
+
     setRestaurants(res.data.restaurants)
     setTotalPages(Math.ceil(res.data.total / res.data.limit)) //Total pages
   }
