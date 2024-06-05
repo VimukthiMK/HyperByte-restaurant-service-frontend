@@ -5,6 +5,8 @@ import './App.css'
 import Layout from 'src/routes/layout/Layout'
 import Restaurants from 'src/routes/resturantPage/ResturantPage'
 import NewRestaurantPage from 'src/routes/newRestaurantPage/NewRestaurantPage'
+import SingleRestaurantPage from 'src/routes/singleRestaurantPage/SingleRestaurantPage'
+
 
 function App() {
   
@@ -15,6 +17,7 @@ function App() {
         {/* routes */}
         <Route path="/" element={<Restaurants/>}/>
         <Route path="/create" element={<NewRestaurantPage/>}/>
+        <Route path="/restaurant/:id" element={<SingleRestaurantPage/>}/>
       </Route>
     </Routes>
   </Router>
