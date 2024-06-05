@@ -13,4 +13,7 @@
 
 .content {
     height: calc(100vh - 100px);
+    background-color: rgba(158, 158, 158, 0.205);
+    border-radius: 10px;
+    padding-bottom: 40px;
   }
