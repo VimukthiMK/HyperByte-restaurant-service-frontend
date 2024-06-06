@@ -7,6 +7,12 @@ export default defineConfig({
   resolve: {
     alias: {
       src: "/src",
+    },   
+  },
+  server: {
+    host: true, // This ensures that Vite listens on all IP addresses, not just localhost
+    watch: {
+      usePolling: true, 
     },
   },
 })

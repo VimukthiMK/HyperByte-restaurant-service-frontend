@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Set environment variables
-ENV VITE_API_URL = http://localhost:8000/api
+ENV VITE_API_URL=http://localhost:8000/api
 
 # Expose the port the app runs on
 EXPOSE 5173
